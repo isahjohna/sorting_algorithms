@@ -83,6 +83,7 @@ void lomuto_sort(int *array, size_t size, int left, int right)
  * @size: The size of the array.
  *
  * Description: Uses the Lomuto partition scheme. Prints the
+<<<<<<< HEAD
  */
 void quick_sort(int *array, size_t size)
 {
@@ -91,3 +92,9 @@ void quick_sort(int *array, size_t size)
 
 	lomuto_sort(array, size, 0, size - 1);
 }
+=======
+ * array after each swap of two elements
+ */
+void quick_sort(int *array, size_t size)
+	
+>>>>>>> 80b4654a91b431d94f3c1b283bd4d77a9c658faf
