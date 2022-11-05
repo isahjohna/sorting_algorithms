@@ -82,5 +82,12 @@ void lomuto_sort(int *array, size_t size, int left, int right)
  * @array: An array of integers.
  * @size: The size of the array.
  *
- * Description: Uses the Lomuto partition scheme. Prints the 
- *
+ * Description: Uses the Lomuto partition scheme. Prints the
+ */
+void quick_sort(int *array, size_t size)
+{
+	if (array == NULL || size < 2)
+		return;
+
+	lomuto_sort(array, size, 0, size - 1);
+}
